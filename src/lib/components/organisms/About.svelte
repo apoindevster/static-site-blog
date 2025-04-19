@@ -6,7 +6,7 @@
 
 <section id="about">
 	<div class="info">
-		<h3>Tech Enthusiast and Developer documenting things to inspire other's self-betterment</h3>
+		<h3>Tech Enthusiast and Developer documenting things to inspire others' self-betterment</h3>
 		<p>
 			I try to inspire those around me to push the boundary of what they know and/or do each day.
 			Part of that includes documenting things I find interesting in hopes that others will learn as
