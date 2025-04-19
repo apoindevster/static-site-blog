@@ -5,7 +5,7 @@
 	export let alt: string;
 	export let fullBleed: boolean | undefined = undefined;
 
-	export let formats: string[] = ['avif', 'webp', 'png'];
+	export let formats: string[] = ['webp', 'png'];
 	export let widths: string[] | undefined = undefined;
 
 	$: fileName = src.split('.')[0];
@@ -37,7 +37,14 @@
 	}
 </script>
 
-<img srcset={buildSrcset()} {src} {alt} loading="lazy" decoding="async" class:full-bleed={fullBleed} />
+<img
+	srcset={buildSrcset()}
+	{src}
+	{alt}
+	loading="lazy"
+	decoding="async"
+	class:full-bleed={fullBleed}
+/>
 
 <style lang="scss">
 	img {
