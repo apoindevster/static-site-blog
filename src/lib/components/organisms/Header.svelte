@@ -24,10 +24,10 @@
 
 	header {
 		position: relative;
-		padding: 30px 0;
+		padding: 30px 0px;
 
 		@include for-phone-only {
-			padding: 20px 0;
+			padding: 30px 5px;
 		}
 
 		&.has-background {

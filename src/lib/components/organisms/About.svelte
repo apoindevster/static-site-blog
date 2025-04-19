@@ -6,24 +6,16 @@
 
 <section id="about">
 	<div class="info">
-		<h2>
-			This is a catchy headline that
-			<SparklingHighlight color="secondary">sparkles!</SparklingHighlight>
-		</h2>
+		<h3>Tech Enthusiast and Developer documenting things to inspire other's self-betterment</h3>
 		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum velit voluptatibus commodi
-			autem provident quam labore, libero beatae praesentium voluptate?
+			I try to inspire those around me to push the boundary of what they know and/or do each day.
+			Part of that includes documenting things I find interesting in hopes that others will learn as
+			well.
 		</p>
 		<div class="socials">
 			<span>Socials:</span>
 			<Socials />
 		</div>
-	</div>
-	<div class="image">
-		<Image
-			src="/images/sample-image.png"
-			alt="Sample for the static template"
-		/>
 	</div>
 </section>
 
@@ -32,15 +24,16 @@
 
 	#about {
 		position: relative;
-		display: grid;
-		grid-template-columns: 500px 250px;
+		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		padding-bottom: 50px;
+		padding: 0px 20px 50px 20px;
+		border-bottom: 1px solid;
 
 		@include for-phone-only {
-			grid-template-columns: 1fr;
-			justify-items: center;
+			padding: 20px 10px 50px 10px;
+			// border-bottom: 1px solid;
 			gap: 20px;
 		}
 
@@ -77,11 +70,6 @@
 					display: none;
 				}
 			}
-		}
-
-		.image {
-			width: 220px;
-			height: 220px;
 		}
 	}
 </style>

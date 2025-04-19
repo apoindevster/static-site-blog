@@ -8,7 +8,13 @@ const config = {
 		alias: {
 			$routes: path.resolve('./src/routes')
 		}
-	}
+	},
+    server: {
+        fs: {
+          // Allow serving files from one level up to the project root
+          allow: ['..'],
+        },
+      },
 };
 
 export default config;
