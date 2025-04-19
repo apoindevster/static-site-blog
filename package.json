@@ -14,7 +14,7 @@
     "story:build": "histoire build",
     "story:preview": "histoire preview",
     "optimize-images": "image-transmutation --run --sourceFolder './build/images' --targetFolder './build/images' --inputFormats 'jpg' --inputFormats 'jpeg' --inputFormats 'png' --outputFormats 'png' --outputFormats 'webp' --outputFormats 'avif'",
-    "postbuild": "npm run optimize-images && svelte-sitemap --domain https://sveltekit-static-blog-template.vercel.app/",
+    "postbuild": "svelte-sitemap --domain https://matt.weiler.xyz/",
     "vercel-sitemap": "svelte-sitemap --out-dir .vercel/output/static --domain https://matt.weiler.xyz",
     "vercel-optimize-images": "image-transmutation --run --sourceFolder '.vercel/output/static/images' --targetFolder '.vercel/output/static/images' --inputFormats 'jpg' --inputFormats 'jpeg' --inputFormats 'png' --outputFormats 'png' --outputFormats 'webp' --outputFormats 'avif'",
     "vercel-build": "npm run build && npm run vercel-sitemap && npm run vercel-optimize-images"
@@ -28,7 +28,6 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-svelte3": "^4.0.0",
     "histoire": "^0.16.1",
-    "image-transmutation": "^1.0.1",
     "mdsvex": "^0.10.6",
     "prettier": "^2.8.0",
     "prettier-plugin-svelte": "^2.8.1",
